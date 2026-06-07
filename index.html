@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/client/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scrumboard</title>
+  </head>
+  <body>
+
+    <h1 id="scrumboard">Scrumboard Jr</h1>
+
+    <div id="form">
+      <input id="title" type="text" placeholder="Title"/>
+      <input id="description" type="text" placeholder="Description"/>
+
+      <select id="category">
+        <option value="ux">UX</option>
+        <option value="dev frontend">Frontend</option>
+        <option value="dev backend">Backend</option>
+      </select>
+
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div id="board">
+
+      <div>
+        <h2>New</h2>
+        <div id="new-task"></div>
+      </div>
+
+
+      <div>
+        <h2>In progress</h2>
+        <div id="task-in-progress"></div>
+      </div>
+
+
+      <div>
+        <h2>Done</h2>
+        <div id="done-task"></div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script type="module" src="/src/client/main.ts"></script>
+  </body>
+</html>
